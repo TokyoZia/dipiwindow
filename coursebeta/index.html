@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gentle Island</title>
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/x-icon" href="images/logo.png" rel="shortcut icon">
+    <link type="Image/x-icon" href="images/logo.png" rel="icon">
+</head>
+<body>
+<div id="main">
+    <div id="header">
+        <div id="burger">&#9776;</div>
+        <div class="logo"><a href="index.html "><img src="images/logo.png" alt=""></a></div>
+        <div id="menu">
+            <div class="menu_item active"><a href="#guarantees">Гарантия вкуса</a></div>
+            <div class="menu_item"><a href="#foods">Блюда</a></div>
+            <div class="menu_item"><a href="#new_food">Почему мы лучшие?</a></div>
+            <div class="menu_item"><a href="#videos">Отзывы</a></div>
+            <div class="menu_item"><a href="#footer">Контакты</a></div>
+        </div>
+    </div>
+    <div id="main_content">
+        <div id="title"><h1>Нежнейшая еда прямиком с гавайев</h1></div>
+        <div id="milk">
+            <img src="images/milk.png" alt="">
+            <div>
+                Вы когда-нибудь были на Гавайских островах?
+            </div>
+        </div>
+        <div id="button">
+            <button id="count" class="order_button">Сделать заказ!</button>
+        </div>
+        <div id="points">
+            <div><img src="images/palm.png" height="40" width="40" alt="" class="points"><span>Натуральные ингредиенты</span></div>
+            <div><img src="images/palm.png"  height="40" width="40" alt="" class="points"><span>Доставка до дома</span></div>
+            <div><img src="images/palm.png"  height="40" width="40" alt="" class="points"><span>Кафе в центре города</span></div>
+        </div>
+        <div id="soc_right">
+
+            <a href="https://www.instagram.com/zianodrill/">
+                <div id="instagram" class="sn"><i class="fab fa-instagram"></i></div>
+            </a>
+            <a href="https://vk.com/public218285981">
+                <div id="vk" class="sn"><i class="fab fa-vk"></i></div>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="guarantees">
+    <div class="zag" id="fir">
+        <span>
+        <span class="at_zag"></span>
+        <span class="zag_first">Мы гарантируем&#160;</span>
+        <span class="zag_second">нашим клиентам</span>
+            </span>
+    </div>
+    <div id="qualities">
+        <div id="first_quality" class="quality">
+            <div class="quality_number">1</div>
+            <div class="quality_title">Качество высокого уровня</div>
+            <div class="quality_text">Опыт всех поваров более 6 лет именно в особом стиле фьюжн.
+                Это значит, что ВАШИ блюда будут приготовлены на высочайшем уровне.
+            </div>
+        </div>
+        <div id="second_quality" class="quality">
+            <div class="quality_number">2</div>
+            <div class="quality_title">Гарантию свежести</div>
+            <div class="quality_text">Мы гарантируем, что у нас всегда самые свежие продукты.
+                Это значит что вы можете сделать возврат блюда если заметите обратное.
+            </div>
+        </div>
+        <div id="third_quality" class="quality">
+            <div class="quality_number">3</div>
+            <div class="quality_title">Отсутствие оверпрайса</div>
+            <div class="quality_text"> Цена наших блюд близка к себестоимости, из-за чего цены
+                в нашем кафе категорически-низкие.
+            </div>
+        </div>
+        <div id="fourth_quality" class="quality">
+            <div class="quality_number">4</div>
+            <div class="quality_title">Нет долгого ожидания</div>
+            <div class="quality_text">Вам не придётся ждать своё блюдо более 15 минут.
+            </div>
+        </div>
+    </div>
+</div>
+<div id="foods">
+    <span class="zag"><span>
+        <div class="at_zag"></div>
+        <span class="zag_first">Такие блюда&#160;</span>
+        <span class="zag_second">получают наши клиенты</span></span>
+    </span>
+    <div class="subtitle">
+        Каждый наш проект — уникальный и неповторимый. Всю историю существования нашей компании —
+        а это целых 4 года — мы радуем наших клиентов УНИКАЛЬНЫМИ блюдами. Ниже в нашем портфолио вы
+        найдете фотографии наших блюд.
+    </div>
+    <div id="portfolio">
+        <div class="food">
+            <div class="food_image"><img src="images/lokomoko.jpg" alt=""></div>
+            <div class="food_description">
+                <div class="food_num">№1</div>
+                <div class="food_title">Локо-моко</div>
+
+            </div>
+        </div>
+        <div class="food">
+            <div class="food_image"><img src="images/poi.jpg" alt=""></div>
+            <div class="food_description">
+                <div class="food_num">№2</div>
+                <div class="food_title">Пои</div>
+
+            </div>
+        </div>
+        <div class="food">
+            <div class="food_image"><img src="images/poke.jpg" alt=""></div>
+            <div class="food_description">
+                <div class="food_num">№3</div>
+                <div class="food_title">Поке</div>
+            </div>
+        </div>
+        <div class="food">
+            <div class="food_image"><img src="images/lomisemon.jpg" alt=""></div>
+            <div class="food_description">
+                <div class="food_num">№4</div>
+                <div class="food_title">Ломи Сэмон</div>
+
+            </div>
+            
+
+        </div>
+        <div class="food">
+            <div class="food_image"><img src="images/haupiya.jpg" alt=""></div>
+            <div class="food_description">
+                <div class="food_num">№5</div>
+                <div class="food_title">Хаупия</div>
+            </div>
+        </div>
+        <div class="food">
+            <div class="food_image"><img src="images/poke.jpg" alt=""></div>
+            <div class="food_description">
+                <div class="food_num">№6</div>
+                <div class="food_title">Хуета</div>
+        </div>
+        </div>
+    </div>
+    <div id="big_numbers">
+        <div class="big_number">
+            <div class="number_image" id="first_big"><img src="images/4.png" height="200" width="200 alt="></div>
+            <div class="number_description">Столько <span>лет</span> наша компания находится на рынке</div>
+        </div>
+        <div class="big_number">
+            <div class="number_image" id="second_big"><img src="images/8.png"  height="200" width="200" alt=""></div>
+            <div class="number_description">Такое число <span>блюд</span> в нашем меню
+            </div>
+        </div>
+        
+
+        </div>
+    </div>
+</div>
+<div id="new_food">
+    <div class="zag">
+        <span>
+        <div class="at_zag"></div>
+        <span class="zag_first">Гавайская кухня с нами &#8212;&#160;</span>
+        <span class="zag_second">это вкусно!</span> </span>
+    </div>
+    <div id="pluses_image">
+        <div id="pluses">
+            <ul>
+                <li>
+                    <img src="images/new-food-ellipse.png" alt="">
+                    <h3>Кафе в центре города</h3>
+                    <p class="plus_desc">
+                        Не нужно искать нас по всему городу,
+                        у нас одна точка и один адрес.
+                    </p>
+                </li>
+                <li>
+                    <img src="images/new-food-ellipse.png" alt="">
+                    <h3>Удалённый заказ</h3>
+                    <p class="plus_desc">
+                        Мы уточним ваши пожелания по телефону и
+                        приготовим заказ пока вы добираетесь до нас.
+                    </p>
+                </li>
+                <li>
+                    <img src="images/new-food-ellipse.png" alt="">
+                    <h3>Неограниченные изменения</h3>
+                    <p class="plus_desc">
+                        Мы бесплатно вносим в заказ столько
+                        изменений, сколько потребуется для вашей
+                        идеального варианта.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div id="pic">
+            <img src="images/vkusno.jpg" alt="">
+        </div>
+    </div>
+</div>
+<div id="quote">
+    <div id="square">
+        <div id="gor">
+            <span id="num_4">4</span>
+            <span id="word_gar">на рынке</span>
+        </div>
+        <div id="vert">
+            <span id="word_year">года</span>
+        </div>
+    </div>
+    <div id="rectangle">
+        <div id="im_quote"><img src="images/im_quotes.png" alt=""></div>
+        <p id="text_quote">Мы даём гарантию, что на каждого, даже самого избирательного покупателя найдется
+        своё блюдо и подход персонала, ведь мы профессионалы своего дела."</p>
+        <div id="quote_rect_down">
+            <div id="owner">Основатель кафе «Gentle Island», Леготин Максим</div>
+        </div>
+    </div>
+</div>
+<div id="videos">
+    <div class="zag">
+        <span>
+        <div class="at_zag"></div>
+        <span class="zag_first">Узнайте, что&#160;</span>
+        <span class="zag_second">наши клиенты говорят о нас</span> </span>
+    </div>
+    <div class="subtitle">
+        <p>Лучше всего о нашей работе могут рассказать видеоотзывы наших довольных клиентов! </p>
+    </div>
+    <div id="block_videos">
+        <div class="video">
+            <iframe width="400" height="auto" src="//www.youtube.com/embed/kaDPY4HvU9I"  frameborder="0"
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture;"
+                    allowfullscreen></iframe>
+
+            <div class="num_video">Видеоотзыв №208</div>
+        </div>
+        <div class="video">
+            <iframe width="400" height="auto" src="" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            <div class="num_video">Видеоотзыв №421</div>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="//www.youtube.com/embed/VnohysXp4WM" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            <div class="num_video">Видеоотзыв №137</div>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="//www.youtube.com/embed/NHj7YqsmBsM" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            <div class="num_video">Видеоотзыв №158</div>
+        </div>
+    </div>
+</div>
+<div id="call">
+    <div class="zag">
+        <span>
+        <div class="at_zag"></div>
+        <span class="zag_first">Закажите доставку&#160;</span>
+        <span class="zag_second">на дом по тарифу 15 рублей/км!</span>
+             </span>
+    </div>
+    <br><br>
+    <div id="form_and_person">
+        <div id="form">
+            <p>Заполните форму, и мы свяжемся с Вами в ближайшее время!</p>
+            <form id="tg">
+
+                <input type="text" name="name" class="input_form form-control in" placeholder="Введите ваше имя">
+
+
+                <input type="tel" name="telnum" class="input_form form-control in" placeholder="+7 (___) ___ - __ - __ ">
+
+
+                <input type="text" name="date_time" class="input_form form-control in" placeholder="Желаемая дата для звонка">
+
+
+
+                <button type="submit" class="btn input_form orange_button sub_button">Создать заявку на звонок</button>
+
+            </form>
+        </div>
+
+    </div>
+</div><script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    const TOKEN= "5919755650:AAGhwFI-f6R700SuNuwmETzBoITm2olalLw";
+    const CHAT_ID= "-1001806292721";
+    const URI_API= ` https://api.telegram.org/bot${ TOKEN }/sendMessage`;
+
+    document.getElementById('tg').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        let message = `<b>Заказ с сайта!</b>\n`
+        message += `<b>Отправитель: </b> ${ this.name.value }\n`;
+        message += `<b>Почта: </b> ${ this.telnum.value }\n`;
+        message += `<b>Желаемая дата звонка: </b> ${ this.date_time.value }`;
+
+        axios.post(URI_API, {
+            chat_id: CHAT_ID,
+            parse_mode: 'html',
+            text: message
+        })
+    })
+</script>
+
+
+
+  <div id="footer">
+    <div id="info">
+        <div id="log_soc" class="info_part">
+            <div class="logo"><a meta http-equiv="refresh" content="1"><img src="images/logo.png" alt=""></a></div>
+            <div id="soc_networks">
+
+                <a href="https://www.instagram.com/zianodrill/"><i class="fab fa-instagram soc_network"></i></a>
+                <a href="https://vk.com/public218285981"><i class="fab fa-vk soc_network"></i></a>
+            </div>
+        </div>
+        <div id="adr" class="info_part">
+            <div class="info_up info_item"><span>Наш офис находится по адресу:</span></div>
+            <div class="info_down info_item"><span>г. Саранск, Большевистская ул., 30 </span></div>
+        </div>
+        <div id="time_work" class="info_part">
+            <div class="info_up info_item"><span>Мы работаем:</span></div>
+            <div class="info_down info_item"><span>ежедневно, с 9:00 до 20:00</span></div>
+        </div>
+        <div id="contacts" class="info_part">
+            <div class="info_item" id="cont_call"><img src="images/call.png" alt=""><span>+7 (902) 668 27 94</span>
+            </div>
+            <div class="info_item" id="cont_mail"><img src="images/mail.png" alt=""><span>gentle.island.food@gmail.com</span>
+            </div>
+        </div>
+    </div>
+    <div id="save">Все права защищены, 2023</div>
+</div>
+<div id="popup_container">
+    <div id="popup">
+        <div id="popup_close">
+            <h2>Оформлемение заказа</h2>
+            <div id="im_and_form">
+                <div id="popup_right">
+                    <div id="popup_form">
+                        <div id="input_form_container">
+                        <input type="text" name="name" class="popup-name input_form1 in" placeholder="Ваше имя">
+                        
+                        <input type="tel" name="phone" class="popup-name input_form2 in" placeholder="Ваше номер телефона">
+                            </div>
+                        <input type="text" name="adress" class="popup-name input_formaddres in" placeholder="Ваш адрес">
+                        
+                        <input type="text" name="comment" class="popup-name input_formcom in" placeholder="Оставьте комментарий к заказу">
+
+                        <div class="counts">
+                            <div id="countsleft"> 
+                                <form class="count1">
+                                    
+                                <form class="count1" id="formbd">
+                                <label class="countlabel">Блюдо 1</label> 
+                                <button class="countbut" type="button" id="minus1">-</button>
+                                <input class="inputcol in" name="input" type="text" id="col1" value="0">
+                                <button class="countbut" type="button" id="plus1">+</button>
+                            </form>
+                            <form class="count1">
+                                <label class="countlabel">Блюдо 1</label>
+                                <button class="countbut" type="button" id="minus2">-</button>
+                                <input class="inputcol in" name="input" type="text" id="col2" value="0">
+                                <button class="countbut" type="button" id="plus2">+</button>
+                            </form>
+                           
+                            <form class="count1">
+                                <label class="countlabel">Блюдо 1</label>
+                                <button class="countbut" type="button" id="minus3">-</button>
+                                <input class="inputcol in" name="input" type="text" id="col3" value="0">
+                                <button class="countbut" type="button" id="plus3">+</button>
+                            </form>
+                                
+                            <form class="count1">
+                                <label class="countlabel">Блюдо 1</label>
+                                <button class="countbut" type="button" id="minus4">-</button>
+                                <input class="inputcol in" name="input" type="text" id="col4" value="0">
+                                <button class="countbut" type="button" id="plus4">+</button>
+                            </form>
+                            
+                            </div>
+                            <div class="countsright in">
+                                <form class="count1">
+                                <label class="countlabel">Блюдо 1</label>
+                                <button class="countbut " type="button" id="minus5">-</button>                             
+                                <input class="inputcol in" name="input" type="text" id="col5" value="0">
+                                <button class="countbut" type="button" id="plus5">+</button>
+                            </form>
+                            
+                            <form class="count1">
+                                <label class="countlabel">Блюдо 1</label>
+                                <button class="countbut" type="button" id="minus6">-</button>
+                                <input class="inputcol in" name="input" type="text" id="col6" value="0">
+                                <button class="countbut" type="button" id="plus6">+</button>
+                            </form>
+                            
+                            <form class="count1">
+                                <label class="countlabel">Блюдо 1</label>
+                                <button class="countbut" type="button" id="minus7">-</button>
+                                <input class="inputcol in" name="input" type="text" id="col7" value="0">
+                                <button class="countbut" type="button" id="plus7">+</button>
+                            </form>
+                            
+                            <form class="count1">
+                                <label class="countlabel">Блюдо 1</label>
+                                <button class="countbut" type="button" id="minus8">-</button>
+                                <input class="inputcol in" name="input" type="text" id="col8" value="0">
+                                <button class="countbut" type="button" id="plus8">+</button>
+                            </form>
+                            </div>
+                            </div> 
+                        </div> 
+                        <button class="sendform in btn input_form orange_button sub_button" type="submit class=btn input_form orange_button sub_button">Оформить заказ!</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup_message">
+            <h2>Ожидайте звонок!</h2>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
