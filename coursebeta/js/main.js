@@ -183,5 +183,9 @@ plus8.onclick = function() {
 minus8.onclick = function() {
   col8.value = parseInt(col8.value) - 1;}
 
- 
+
+
+
+
+
 }) 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
@@ -16,12 +16,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="image/x-icon" href="images/logo.png" rel="shortcut icon">
     <link type="Image/x-icon" href="images/logo.png" rel="icon">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
 <div id="main">
+
+
+
     <div id="header">
         <div id="burger">&#9776;</div>
-        <div class="logo"><a href="index.html "><img src="images/logo.png" alt=""></a></div>
+        <div class="logo"><a href="http://gentle.island.food.host1859362.serv81.hostland.pro/ "><img src="images/logo.png" alt=""></a></div>
+
         <div id="menu">
             <div class="menu_item active"><a href="#guarantees">Гарантия вкуса</a></div>
             <div class="menu_item"><a href="#foods">Блюда</a></div>
@@ -31,6 +36,7 @@
         </div>
     </div>
     <div id="main_content">
+
         <div id="title"><h1>Нежнейшая еда прямиком с гавайев</h1></div>
         <div id="milk">
             <img src="images/milk.png" alt="">
@@ -122,7 +128,8 @@
                 <div class="food_title">Пои</div>
 
             </div>
-        </div>
+
+    </div>
         <div class="food">
             <div class="food_image"><img src="images/poke.jpg" alt=""></div>
             <div class="food_description">
@@ -148,10 +155,10 @@
             </div>
         </div>
         <div class="food">
-            <div class="food_image"><img src="images/poke.jpg" alt=""></div>
+            <div class="food_image"><img src="images/pizza.jpg" alt=""></div>
             <div class="food_description">
                 <div class="food_num">№6</div>
-                <div class="food_title">Хуета</div>
+                <div class="food_title">Гавайская пицца</div>
         </div>
         </div>
     </div>
@@ -329,7 +336,7 @@
   <div id="footer">
     <div id="info">
         <div id="log_soc" class="info_part">
-            <div class="logo"><a meta http-equiv="refresh" content="1"><img src="images/logo.png" alt=""></a></div>
+            <div class="logo"><a href="http://gentle.island.food.host1859362.serv81.hostland.pro/"><img src="images/logo.png" alt=""></a></div>
             <div id="soc_networks">
 
                 <a href="https://www.instagram.com/zianodrill/"><i class="fab fa-instagram soc_network"></i></a>
@@ -360,94 +367,152 @@
             <div id="im_and_form">
                 <div id="popup_right">
                     <div id="popup_form">
-                        <div id="input_form_container">
-                        <input type="text" name="name" class="popup-name input_form1 in" placeholder="Ваше имя">
-                        
-                        <input type="tel" name="phone" class="popup-name input_form2 in" placeholder="Ваше номер телефона">
-                            </div>
-                        <input type="text" name="adress" class="popup-name input_formaddres in" placeholder="Ваш адрес">
-                        
-                        <input type="text" name="comment" class="popup-name input_formcom in" placeholder="Оставьте комментарий к заказу">
+                        <form onsubmit="sendEmail()">
+                            <div id="input_form_container">
+                                <input type="text" name="name" class="popup-name input_form1 in" placeholder="Ваше имя">
 
-                        <div class="counts">
-                            <div id="countsleft"> 
-                                <form class="count1">
-                                    
-                                <form class="count1" id="formbd">
-                                <label class="countlabel">Блюдо 1</label> 
-                                <button class="countbut" type="button" id="minus1">-</button>
-                                <input class="inputcol in" name="input" type="text" id="col1" value="0">
-                                <button class="countbut" type="button" id="plus1">+</button>
-                            </form>
-                            <form class="count1">
-                                <label class="countlabel">Блюдо 1</label>
-                                <button class="countbut" type="button" id="minus2">-</button>
-                                <input class="inputcol in" name="input" type="text" id="col2" value="0">
-                                <button class="countbut" type="button" id="plus2">+</button>
-                            </form>
-                           
-                            <form class="count1">
-                                <label class="countlabel">Блюдо 1</label>
-                                <button class="countbut" type="button" id="minus3">-</button>
-                                <input class="inputcol in" name="input" type="text" id="col3" value="0">
-                                <button class="countbut" type="button" id="plus3">+</button>
-                            </form>
-                                
-                            <form class="count1">
-                                <label class="countlabel">Блюдо 1</label>
-                                <button class="countbut" type="button" id="minus4">-</button>
-                                <input class="inputcol in" name="input" type="text" id="col4" value="0">
-                                <button class="countbut" type="button" id="plus4">+</button>
-                            </form>
-                            
+                                <input type="tel" name="phone" class="popup-name input_form2 in" placeholder="Ваше номер телефона">
                             </div>
-                            <div class="countsright in">
-                                <form class="count1">
-                                <label class="countlabel">Блюдо 1</label>
-                                <button class="countbut " type="button" id="minus5">-</button>                             
-                                <input class="inputcol in" name="input" type="text" id="col5" value="0">
-                                <button class="countbut" type="button" id="plus5">+</button>
-                            </form>
-                            
-                            <form class="count1">
-                                <label class="countlabel">Блюдо 1</label>
-                                <button class="countbut" type="button" id="minus6">-</button>
-                                <input class="inputcol in" name="input" type="text" id="col6" value="0">
-                                <button class="countbut" type="button" id="plus6">+</button>
-                            </form>
-                            
-                            <form class="count1">
-                                <label class="countlabel">Блюдо 1</label>
-                                <button class="countbut" type="button" id="minus7">-</button>
-                                <input class="inputcol in" name="input" type="text" id="col7" value="0">
-                                <button class="countbut" type="button" id="plus7">+</button>
-                            </form>
-                            
-                            <form class="count1">
-                                <label class="countlabel">Блюдо 1</label>
-                                <button class="countbut" type="button" id="minus8">-</button>
-                                <input class="inputcol in" name="input" type="text" id="col8" value="0">
-                                <button class="countbut" type="button" id="plus8">+</button>
-                            </form>
+                            <input type="text" name="adress" class="popup-name input_formaddres in" placeholder="Ваш адрес">
+
+                            <input type="text" name="comment" class="popup-name input_formcom in" placeholder="Оставьте комментарий к заказу">
+
+                            <div class="counts" >
+                                <div id="countsleft">
+                                    <form class="count1" class="order-form" action="bdconnect.php" method="post">
+
+                                        <form class="count1" id="formbd">
+                                            <label class="countlabel1">Гавайская пицца</label>
+                                            <button class="countbut" type="button" id="minus1">-</button>
+                                            <input class="inputcol in" name="input" type="numbe r" id="col1" min="0" value="0" data-price="700" onchange="updatePrice()">
+                                            <button class="countbut" type="button" id="plus1">+</button>
+                                        </form>
+                                        <form class="count2">
+                                            <label class="countlabel2">Милк-шейк</label>
+                                            <button class="countbut" type="button" id="minus2">-</button>
+                                            <input class="inputcol in" name="input" type="text" id="col2" value="0" data-price="250" onchange="updatePrice()">
+                                            <button class="countbut" type="button" id="plus2">+</button>
+                                        </form>
+
+                                        <form class="count3">
+                                            <label class="countlabel3">Ломи Сэмон</label>
+                                            <button class="countbut" type="button" id="minus3">-</button>
+                                            <input class="inputcol in" name="input" type="text" id="col3" value="0" data-price="400" onchange="updatePrice()">
+                                            <button class="countbut" type="button" id="plus3">+</button>
+                                        </form>
+
+                                        <form class="count4">
+                                            <label class="countlabel4">Хаупия</label>
+                                            <button class="countbut" type="button" id="minus4">-</button>
+                                            <input class="inputcol in" name="input" type="text" id="col4" value="0" data-price="300" onchange="updatePrice()">
+                                            <button class="countbut" type="button" id="plus4">+</button>
+                                        </form>
+                                    </form>
+                                </div>
+                                <div class="countsright in">
+                                    <form class="count5">
+                                        <label class="countlabel5">Поке</label>
+                                        <button class="countbut " type="button" id="minus5">-</button>
+                                        <input class="inputcol in" name="input" type="text" id="col5" value="0" data-price="500" onchange="updatePrice()">
+                                        <button class="countbut" type="button" id="plus5">+</button>
+                                    </form>
+
+                                    <form class="count6">
+                                        <label class="countlabel6">Чай</label>
+                                        <button class="countbut" type="button" id="minus6">-</button>
+                                        <input class="inputcol in" name="input" type="text" id="col6" value="0" data-price="150" onchange="updatePrice()">
+                                        <button class="countbut" type="button" id="plus6">+</button>
+                                    </form>
+
+                                    <form class="count7">
+                                        <label class="countlabel7">Локо-моко</label>
+                                        <button class="countbut" type="button" id="minus7">-</button>
+                                        <input class="inputcol in" name="input" type="text" id="col7" value="0" data-price="400" onchange="updatePrice()">
+                                        <button class="countbut" type="button" id="plus7">+</button>
+                                    </form>
+
+                                    <form class="count8">
+                                        <label class="countlabel8">Пои</label>
+                                        <button class="countbut" type="button" id="minus8">-</button>
+                                        <input class="inputcol in" name="input" type="text" id="col8" value="0" data-price="200" onchange="updatePrice()">
+                                        <button class="countbut" type="button" id="plus8">+</button>
+                                    </form>
+
+                                </div>
                             </div>
-                            </div> 
-                        </div> 
-                        <button class="sendform in btn input_form orange_button sub_button" type="submit class=btn input_form orange_button sub_button">Оформить заказ!</button>
-                    </form>
+                            <form>
+                                <label class="endPriceLabel">Итого:</label>
+                                <input class="endPriceInput" value="0" id="totalPrice" readonly>
+                                <button class="endPriceButton" id="endPriceButton" onclick="updatePrice()">Подсчитать цену</button>
+
+                            <button type="submit" class="sendform in btn input_form orange_button sub_button" onclick="bdconnect.php">Оформить заказ</button>
+                        </form>
+                </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="popup_message">
-            <h2>Ожидайте звонок!</h2>
-        </div>
+
     </div>
 </div>
         </div>
     </div>
 
 </div>
+<script>
 
+        var myButton = document.getElementById('endPriceButton');
+        myButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        // здесь можно добавить код обработки нажатия на кнопку
+    });
+
+function updatePrice() {
+
+const quantityInput1 = document.getElementById("col1");
+const price1 = parseFloat(quantityInput1.getAttribute("data-price"));
+const quantity1 = parseInt(quantityInput1.value);
+const totalPrice1 = price1 * quantity1;
+
+const quantityInput2 = document.getElementById("col2");
+const price2 = parseFloat(quantityInput2.getAttribute("data-price"));
+const quantity2 = parseInt(quantityInput2.value);
+const totalPrice2 = price2 * quantity2;
+
+const quantityInput3 = document.getElementById("col3");
+const price3 = parseFloat(quantityInput3.getAttribute("data-price"));
+const quantity3 = parseInt(quantityInput3.value);
+const totalPrice3 = price3 * quantity3;
+
+const quantityInput4 = document.getElementById("col4");
+const price4 = parseFloat(quantityInput4.getAttribute("data-price"));
+const quantity4 = parseInt(quantityInput4.value);
+const totalPrice4 = price4 * quantity4;
+
+const quantityInput5 = document.getElementById("col5");
+const price5 = parseFloat(quantityInput5.getAttribute("data-price"));
+const quantity5 = parseInt(quantityInput5.value);
+const totalPrice5 = price5 * quantity5;
+
+const quantityInput6 = document.getElementById("col6");
+const price6 = parseFloat(quantityInput6.getAttribute("data-price"));
+const quantity6 = parseInt(quantityInput6.value);
+const totalPrice6 = price6 * quantity6;
+
+const quantityInput7 = document.getElementById("col7");
+const price7 = parseFloat(quantityInput7.getAttribute("data-price"));
+const quantity7 = parseInt(quantityInput7.value);
+const totalPrice7 = price7 * quantity7;
+
+const quantityInput8 = document.getElementById("col8");
+const price8 = parseFloat(quantityInput8.getAttribute("data-price"));
+const quantity8 = parseInt(quantityInput8.value);
+const totalPrice8 = price8 * quantity8;
+
+const total = totalPrice1 + totalPrice2 + totalPrice3 + totalPrice4 + totalPrice5 + totalPrice6 + totalPrice7 + totalPrice8;
+const totalPriceInput = document.getElementById("totalPrice");
+totalPriceInput.value = total.toFixed(2);
+}</script>
 
 
 </body>
